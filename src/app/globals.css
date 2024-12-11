@@ -1,21 +1,109 @@
+/* Lato Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Root color variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-light: #FDFAF7;
+  --foreground-light: #171717;
+  --background-dark: #FDFAF7;
+  --foreground-dark: #ededed;
+
+  /* color palette */
+  --primary: #FF80B4;
+  --secondary: #0B4B2C;
+  --stars:#FDCB15;
+  --muted: #AAAAAA;
+  --light-background: #FDFAF7;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--background-dark);
+    --foreground: var(--foreground-dark);
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--background-light);
+    --foreground: var(--foreground-light);
+  }
+} */
+
+/* Base body styling */
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Pagination dots */
+.swiper-container .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  margin: 0 5px;
+  padding: 2px;
+
+
+}
+
+/* Active bullet */
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
+
+/* Navigation arrows */
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev {
+  font-size: 16px;
+  color: #FF80B4;
+}
+
+.swiper-container .swiper-button-next:after,
+.swiper-container .swiper-button-prev:after {
+  font-size: 16px;
+  color: #FF80B4;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }
