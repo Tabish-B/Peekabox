@@ -91,14 +91,14 @@ const BusinessPage = () => {
         </Link>
       </div>
 
-      {/* Testimonials Section (Optional) */}
+      {/* Testimonials Section*/}
       <div className="bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-2xl font-semibold text-primary text-center mb-6">What Businesses Say</h2>
         <div className="flex flex-wrap justify-center">
-          {/* You can add testimonial cards or feedback from businesses here */}
+          {/* testamonials*/}
           <div className="bg-gray-100 p-6 rounded-lg max-w-xs m-4 shadow-md">
             <p className="text-lg text-gray-700 mb-4">
-              "Peekabox has helped us reduce food waste significantly and attract new customers. It's a win-win!"
+              &quot;Peekabox has helped us reduce food waste significantly and attract new customers. It&apos;s a win-win! &quot;
             </p>
             <p className="font-semibold text-gray-900">John D.</p>
             <p className="text-sm text-gray-500">Owner, Local Restaurant</p>
@@ -106,7 +106,7 @@ const BusinessPage = () => {
         </div>
       </div>
 
-      {/* Contact Information (Optional) */}
+      {/* Contact Information */}
       <div className="text-center mt-12">
         <p className="text-lg text-gray-700">
           Have questions? <span className="text-primary">Contact us</span> today to learn more about how we can help your business.
