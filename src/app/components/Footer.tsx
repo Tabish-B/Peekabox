@@ -95,13 +95,13 @@ const Footer = () => {
                 </p>
 
                 {/* Social Media Icons */}
-                <div className="flex space-x-4 mb-4 sm:mb-0 ml-auto">
+                <div className="flex space-x-4 mb-4 sm:mb-0 justify-center sm:ml-auto">
                     <a
                         href="https://facebook.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Facebook"
-                        className="hover:text-accent text-accent"
+                        className="hover:text-accent text-accent transition-all duration-300 transform hover:scale-125"
                     >
                         <FaFacebookF />
                     </a>
@@ -110,7 +110,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Twitter"
-                        className="hover:text-accent text-accent"
+                        className="hover:text-accent text-accent transition-all duration-300 transform hover:scale-125"
                     >
                         <FaTwitter />
                     </a>
@@ -119,7 +119,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Instagram"
-                        className="hover:text-accent text-accent"
+                        className="hover:text-accent text-accent transition-all duration-300 transform hover:scale-125"
                     >
                         <FaInstagram />
                     </a>
@@ -128,7 +128,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
-                        className="hover:text-accent text-accent"
+                        className="hover:text-accent text-accent transition-all duration-300 transform hover:scale-125"
                     >
                         <FaLinkedinIn />
                     </a>
@@ -137,7 +137,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="TikTok"
-                        className="hover:text-accent text-accent"
+                        className="hover:text-accent text-accent transition-all duration-300 transform hover:scale-125"
                     >
                         <FaTiktok />
                     </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="YouTube"
-                        className="hover:text-accent text-accent"
+                        className="hover:text-accent text-accent transition-all duration-300 transform hover:scale-125"
                     >
                         <FaYoutube />
                     </a>

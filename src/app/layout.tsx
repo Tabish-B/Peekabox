@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Peekabox - Web Info",
   description: "Discover how Peekabox reduces food waste and connects businesses to sustainable solutions.",
-  keywords: ["food waste", "sustainability", "business solution", "Peekabox", "TGTG model"],
+  keywords: ["food waste", "sustainability", "business solution", "Peekabox"],
   openGraph: {
     type: 'website',
     url: 'https://peekabox.com',

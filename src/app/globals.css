@@ -1,78 +1,102 @@
-/* Lato Font */
+/* Import Lato Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* Tailwind Base Utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Root color variables */
+/* Root Variables */
 :root {
   --background-light: #FDFAF7;
   --foreground-light: #171717;
   --background-dark: #FDFAF7;
   --foreground-dark: #ededed;
 
-  /* color palette */
+  /* Color Palette */
   --primary: #FF80B4;
+  /* Pink */
   --secondary: #0B4B2C;
-  --stars:#FDCB15;
+  /* Green */
+  --stars: #FDCB15;
+  /* Gold */
   --muted: #AAAAAA;
+  /* Gray */
   --light-background: #FDFAF7;
+
+  /* Scrollbar Colors */
+  --scrollbar-thumb: var(--primary);
+  /* Thumb color */
+  --scrollbar-track: var(--light-background);
+  /* Track color */
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--background-dark);
-    --foreground: var(--foreground-dark);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: var(--background-light);
-    --foreground: var(--foreground-light);
-  }
-} */
-
-/* Base body styling */
+/* Global Styles */
 body {
-  color: var(--foreground);
-  background-color: var(--background);
+  color: var(--foreground-light);
+  background-color: var(--background-light);
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  overflow: auto;
 }
 
-/* Pagination dots */
+body {
+  color: var(--foreground-light);
+  background-color: var(--background-light);
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  overflow-y: auto;
+}
+
+body.scrollbar-visible {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: auto;
+}
+
+body.scrollbar-visible::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body.scrollbar-visible::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+body.scrollbar-visible::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+/* Pagination Dots */
 .swiper-container .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   background-color: var(--primary);
   margin: 0 5px;
-  padding: 2px;
-
-
 }
 
-/* Active bullet */
 .swiper-container .swiper-pagination-bullet-active {
   background-color: var(--primary);
 }
 
-/* Navigation arrows */
+/* Navigation Arrows */
 .swiper-container .swiper-button-next,
 .swiper-container .swiper-button-prev {
   font-size: 16px;
-  color: #FF80B4;
+  color: var(--primary);
 }
 
 .swiper-container .swiper-button-next:after,
 .swiper-container .swiper-button-prev:after {
   font-size: 16px;
-  color: #FF80B4;
+  color: var(--primary);
 }
 
+/* Keyframes for Animation */
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -87,9 +111,7 @@ body {
   animation: marquee 30s linear infinite;
 }
 
-
-
-/* Responsive breakpoints */
+/* Responsive Font Sizes */
 @media (max-width: 1024px) {
   body {
     font-size: 16px;

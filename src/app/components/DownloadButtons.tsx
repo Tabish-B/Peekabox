@@ -3,31 +3,42 @@ import { FaGooglePlay, FaApple } from "react-icons/fa";
 
 const DownloadButtons = () => {
     return (
-        <div className="flex justify-center gap-4 py-4 md:py-8 flex-wrap justify-center items-center">
-            <a
-                href="https://play.google.com/store/apps"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Download from Google Play"
-                className="flex items-center bg-white border border-gray-300 text-black py-3 px-6 rounded-full shadow-md w-full max-w-xs transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 mb-4 md:mb-0"
-            >
-                <FaGooglePlay className="text-4xl mr-4" />
-                <div className="flex flex-col text-left">
-                    <span className="text-sm font-semibold">Get it on</span>
-                    <span className="font-medium">Google Play</span>
-                </div>
-            </a>
+        <div className="flex flex-wrap gap-4 items-center justify-center md:flex-row pt-6 pb-8 sm:pt-8 sm:pb-12 md:pt-10 md:pb-14">
+            {/* App Store Button */}
             <a
                 href="https://www.apple.com/app-store/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download from App Store"
-                className="flex items-center bg-white border border-gray-300 text-black py-3 px-6 rounded-full shadow-md w-full max-w-xs transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                className="flex items-center gap-3 px-4 py-3 md:px-6 md:py-4 rounded-lg bg-white shadow-md text-black transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
             >
-                <FaApple className="text-4xl mr-4" />
-                <div className="flex flex-col text-left">
-                    <span className="text-sm font-semibold">Download on</span>
-                    <span className="font-medium">App Store</span>
+                <FaApple className="text-3xl md:text-4xl" />
+                <div className="text-left">
+                    <span className="block text-xs md:text-sm uppercase tracking-wide text-pink-500">
+                        Download on
+                    </span>
+                    <span className="block font-medium text-base md:text-lg">
+                        App Store
+                    </span>
+                </div>
+            </a>
+
+            {/* Google Play Button */}
+            <a
+                href="https://play.google.com/store/apps"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download from Google Play"
+                className="flex items-center gap-3 px-4 py-3 md:px-6 md:py-4 rounded-lg bg-white shadow-md text-black transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+            >
+                <FaGooglePlay className="text-3xl md:text-4xl" />
+                <div className="text-left">
+                    <span className="block text-xs md:text-sm uppercase tracking-wide text-pink-500">
+                        Get it on
+                    </span>
+                    <span className="block font-medium text-base md:text-lg">
+                        Google Play
+                    </span>
                 </div>
             </a>
         </div>
